@@ -13,6 +13,11 @@ year = None
 month = None
 day = None
 
+
+year = int(input("Enter a four digit year: "))
+month = int(input("Enter month: "))
+day = int(input("Enter day: "))
+
 # Get the year, then the month, then the day
 # housekeeping()
 
@@ -30,5 +35,7 @@ elif int(day) < MIN_DAY or int(day) > MAX_DAY: # invalid day
 # endOfJob()
 if validDate == True:
     # Output statement
+    print(str(month) + "/" + str(day) + "/" + str(year) + " is a valid date.")
 else:
     # Output statement
+    print(str(month) + "/" + str(day) + "/" + str(year) + " is an invalid date.")
